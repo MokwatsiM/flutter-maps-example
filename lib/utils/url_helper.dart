@@ -13,13 +13,13 @@ class UrlHelper {
             longitude +
             "&radius=1500&type=restaurant&keyword=" +
             keyword +
-            "&key=AIzaSyAtKUDi8084qwpy3wgKHwB3LuFnQCY9APw".toString());
+            "&key=YOUR-KEY".toString());
     return "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" +
         latitude +
         "," +
         longitude +
         "&radius=1500&type=restaurant&keyword=" +
         keyword +
-        "&key=AIzaSyAtKUDi8084qwpy3wgKHwB3LuFnQCY9APw".toString();
+        "&key=YOUR-KEY".toString();
   }
 }
