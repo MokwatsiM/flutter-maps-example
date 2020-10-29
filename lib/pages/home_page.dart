@@ -136,15 +136,6 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future<void> _openMapsFor(PlaceViewmodel placeViewmodel) async {
-    // final availableMaps = await launcher.MapLauncher.installedMaps;
-    // print(
-    //     availableMaps); // [AvailableMap { mapName: Google Maps, mapType: google }, ...]
-
-    // await availableMaps.first.showMarker(
-    //   coords: launcher.Coords(_position.latitude, _position.longitude),
-    //   title: "Ocean Beach",
-    // );
-
     if (await launcher.MapLauncher.isMapAvailable(launcher.MapType.google)) {
       await launcher.MapLauncher.showMarker(
         mapType: launcher.MapType.google,
